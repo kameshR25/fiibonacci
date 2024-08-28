@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainback">
+    <!--Reselect and spiiner item starts-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal">
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="RE-CALCULATE"
+            android:id="@+id/button2"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:background="@drawable/custombutton"
+            android:textColor="#ffffff"
+            android:onClick="recalculateBtn" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9031633523121800/7757396862">
+        </com.google.android.gms.ads.AdView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#B6C8EB"
+            android:layout_marginTop="5dp">
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anlysis"
+                    android:id="@+id/button3"
+                    android:onClick="analysis"
+                    android:textSize="20dp"
+                    android:background="@drawable/custombutton"
+                    android:textColor="#ffffff"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chart"
+                    android:id="@+id/button4"
+                    android:onClick="chart"
+                    android:textSize="20dp"
+                    android:background="@drawable/custombutton"
+                    android:textColor="#ffffff"
+                    android:layout_margin="5dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <!--Reselect and spiiner item ends-->
+    <!--Graph layout starts-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/graphLayout">
+        <LinearLayout
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/instruments"
+            tools:ignore="Orientation" >
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--Graph layout ends-->
+    <!--Analysis layout starts-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainback">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout"
+        >
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:id="@+id/upCycleTable"
+            android:background="#b6d9eb"
+            android:layout_marginTop="5dp">
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="2dp"
+            android:id="@+id/banner"
+            android:layout_marginEnd="2dp"
+            android:background="#009688">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/book5"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Paid Fibonacci course"
+                        android:paddingTop="4dp"
+                        android:paddingLeft="2dp"
+                        android:textColor="#ffd700"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:textStyle="bold"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="(Fibonacci Concept Book &amp; 1 DVD)"
+                        android:paddingLeft="2dp"
+                        android:textColor="#ffd700"
+                        android:fontFamily="@font/roboto_condensed_bold"
+                        android:textStyle="bold"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="left|center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="( LifeTime Access @ ₹2360 )"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            />
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Buy Now"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/roboto_condensed_bold"
+                            android:layout_marginStart="8dp"
+                            android:backgroundTint="#F0B643"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        //paid course layout ends
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:id="@+id/downCycleTable"
+            android:background="#b6d9eb"
+            android:layout_marginTop="5dp">
+
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+    <!--Analysis layout ends-->
+</LinearLayout>

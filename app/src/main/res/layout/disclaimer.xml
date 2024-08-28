@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#104080">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Access to application"
+        android:id="@+id/button"
+        android:background="@drawable/larger_width_buttons"
+        android:onClick="accessToAppBtn"
+        android:padding="25dp"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/latest_strategy" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disclaimer"
+        android:text="Expiry"
+        android:textSize="16dp"
+        android:textColor="#ffffff"
+        android:textIsSelectable="false"
+        android:gravity="center_horizontal" />
+
+
+
+</LinearLayout>

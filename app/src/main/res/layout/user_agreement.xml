@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Do you wish to get an e-mail and sms alert ?"
+        android:textColor="#ffffff"
+        android:background="#2196F3"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:layout_gravity="center_vertical"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.Nifty and Banknifty weekly trend report."
+            android:textColor="#f7636463"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2.Invitation to technical study live webinar."
+            android:textColor="#f7636463"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3.Stock market trend analysis."
+            android:textColor="#f7636463"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4.You will also get our product , service and promotional offers."
+            android:textColor="#f7636463"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+</LinearLayout>

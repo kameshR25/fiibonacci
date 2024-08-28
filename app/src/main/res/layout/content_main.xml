@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.smartfinancein.smartfinance.fibonacci.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+<!--main layout starts-->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:background="#104080">
+      <!--Registration Form strats here-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/registration_layout"
+          android:padding="1dp"
+          android:visibility="gone"
+         >
+          <include
+              layout="@layout/registration_form"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--Registration Form ends here-->
+
+      <!--STARTING LAYOUT STARTS HERE-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/first_layout"
+          android:padding="1dp"
+          android:visibility="gone"
+          android:background="#ffffff">
+          <include
+              layout="@layout/start_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--STARTING LAYOUT STARTS HERE-->
+
+      <!--Login  strats here-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/userLogin_layout"
+          android:padding="1dp"
+          android:visibility="gone">
+          <include
+              layout="@layout/login_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--Login  ends here-->
+      <!--Dsiclaimer  strats here-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/disclaimer_layout"
+          android:padding="1dp"
+          android:visibility="gone">
+          <include
+              layout="@layout/disclaimer"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--Dsiclaimer  ends here-->
+      <!--How to use starts here....-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/howToUse_layout"
+          android:visibility="gone">
+          <WebView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/howToUse_weview" />
+      </LinearLayout>
+      <!--How to use ends here....-->
+      <!--Main  strats here-->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:id="@+id/main_layout"
+          android:padding="1dp"
+          android:visibility="gone">
+          <include
+              layout="@layout/main_layouts"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--Main  ends here-->
+      <!--Target layout starts-->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:id="@+id/targetLayout"
+          android:visibility="gone">
+          <include
+              layout="@layout/target_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"/>
+      </LinearLayout>
+      <!--Target layout ends-->
+  </LinearLayout>
+    <!--main layout ends-->
+</RelativeLayout>

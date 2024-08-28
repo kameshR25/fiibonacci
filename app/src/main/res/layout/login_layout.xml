@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--login layout starts here-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loginForm">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/userId"
+                android:background="#ffffff"
+                android:hint="Userid"
+                android:textSize="18dp"
+                android:layout_margin="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password"
+                android:background="#ffffff"
+                android:hint="Password"
+                android:textSize="18dp"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:id="@+id/login"
+                android:onClick="btnLogin"
+                android:background="@drawable/custombutton"
+                android:layout_margin="10dp"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please check your email inbox after 5 minutes to know your user-id and password.If you do not recieve an email,please contact karthikeyan.m@smartfinancein.com or gowthaman@smartfinancein.com"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:textColor="#ffffff"
+                android:textIsSelectable="false"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+        <!--login layout ends here-->
+    </ScrollView>
+</LinearLayout>
