@@ -99,6 +99,8 @@ public class MainActivity extends AppCompatActivity
 
     AdView mAdView,mAdView1,mAdView2;
 
+    // comment is added
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
